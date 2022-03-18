@@ -1,10 +1,9 @@
 <script lang="ts">
-	import Emoji from './components/atoms/Emoji.svelte';
-  export let name: string;
+  import Emoji from './components/atoms/Emoji.svelte';
 </script>
 
 <main>
-  <h1>Hello {name}!</h1>
+  <h1>Hello World!</h1>
   <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
   <Emoji emoji="😀" />
   <Emoji emoji="🐶" />
