@@ -1,16 +1,12 @@
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-  ],
-  parser: '@typescript-eslint/parser',
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: 'module',
+    sourceType: "module",
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
-    extraFileExtensions: ['.svelte']
+    project: ["./tsconfig.json"],
+    extraFileExtensions: [".svelte"],
   },
   env: {
     es6: true,
@@ -27,4 +23,16 @@ module.exports = {
       processor: "svelte3/svelte3",
     },
   ],
+  ignorePatterns: ["dist"],
+  rules: {
+    indent: ["error", 2],
+    quotes: ["error", "single"],
+    semi: ["error", "always"],
+    "no-console": [
+      "warn",
+      {
+        allow: ["warn", "error"],
+      },
+    ],
+  },
 };

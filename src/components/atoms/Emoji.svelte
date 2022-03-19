@@ -5,9 +5,7 @@
   export const src = `https://twemoji.maxcdn.com/v/latest/svg/${emojiCode}.svg`;
 </script>
 
-<main>
-  <img src={src} alt={emoji}>
-</main>
+<img src={src} alt={emoji} >
 
 <style>
 img {
